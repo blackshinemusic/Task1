@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calc {
+public class Main {
     public static void main(String[] args) {
         System.out.print("Введите выражение: ");
         Scanner sc = new Scanner(System.in);
@@ -12,7 +12,6 @@ public class Calc {
         input = input.replace(" ", "");
         String[] num = input.split(" ");
         String move = "";
-
 
 
         if (input.contains("+")) {
@@ -87,9 +86,7 @@ public class Calc {
                 resToString = Integer.toString(res);
                 return resToString;
             }
-        }
-
-        else {
+        } else {
             try {
                 throw new Exception();
             } catch (Exception e) {
